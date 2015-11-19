@@ -26,27 +26,83 @@
 \lstset{showstringspaces=false}
 \lstset{showtabs=false}
 \lstset{breaklines}
+
+
+%lager heftig forside:
+\newcommand*{\titleAT}{\begingroup % Create the command for including the title page in the document
+\newlength{\drop} % Command for generating a specific amount of whitespace
+\drop=0.1\textheight % Define the command as 10% of the total text height
+
+\rule{\textwidth}{1pt}\par % Thick horizontal line
+\vspace{2pt}\vspace{-\baselineskip} % Whitespace between lines
+\rule{\textwidth}{0.4pt}\par % Thin horizontal line
+
+\vspace{0.5\drop} % Whitespace between the top lines and title
+\centering % Center all text
+\textcolor{black}{ % Red font color
+{\Huge $N$-body simulation of an open galactic cluster}\\[0.75\baselineskip] % Title line 1
+%{\Large Tema:}\\[0.75\baselineskip] % Title line 2
+%{\Huge Lydmåling og hørselstesting} % Title line 3
+} 
+
+\vspace{0.25\drop} % Whitespace between the title and short horizontal line
+\rule{0.3\textwidth}{0.4pt}\par % Short horizontal line under the title
+\vspace{0.25\drop} % Whitespace between the thin horizontal line and the author name
+
+{\Large \textsc{Project 5, FYS-3150\\[0.75\baselineskip] \normalsize{Ina K. B. Kullmann, candidate nr: 20}
+}}\par % Author name
+
+%\vfill % Whitespace between the author name and publisher text
+
+\vspace{0.25\drop} % Whitespace between the title and short horizontal line
+\rule{0.3\textwidth}{0.4pt}\par % Short horizontal line under the title
+\vspace{0.25\drop} % Whitespace between the thin horizontal line and the author name
+
+\begin{abstract}
+The aim of this project is to numerically find the critical temperature for the two dimentional Ising model by using the metropolis algorithm. We will first test the implementation of the algorithm carefully, first by comparing with theoretical values calculated for a small system. Then we will see if the algorithm behaves as expected according to our physical intuition for a larger system.
+
+When we have found a estimate for the critical temperature we will compare it to Lars Onsagers analytical result.
+
+\end{abstract}
+\vspace*{0.25\drop} % Whitespace under the publisher text
+
+\begin{center}
+{ \scriptsize \noindent All source codes can be found at: \texttt{https://github.com/inakbk/Project\_5}. }
+\end{center}
+
+\rule{\textwidth}{0.4pt}\par % Thin horizontal line
+\vspace{2pt}\vspace{-\baselineskip} % Whitespace between lines
+\rule{\textwidth}{1pt}\par % Thick horizontal line
+
+\endgroup}
+%kode slutt for heftig forside
+
+
 \begin{document}
+%\maketitle
+\titleAT % This command includes the title page
 
 
-\section*{Project 5, Astronomy project, $N$-body simulation of an open galactic cluster, deadline  Friday December 4}
+\newpage
+\tableofcontents
+\newpage
 
+\section{Introduction}
 
+The goal in this project is to develop a code that can perform simulations of an open cluster using Newtonian gravity. First, however we will compare the stability of two different methods. This is because when we are looking at a system with a large number of particles, we are more interested in the statistical properties of the system than in the individual motion of each of the particles. This means that the stability of the solution method is more important than its short term accuracy.  This project is inspired by an article by Joyce {\em et al.}, see Ref.~\cite{joyce2010} below.
 
+In the first part of this project we will explore the stability of two well-tested numerical methods for solving differential equations. The algorithms to test and implement are the fourth-order Runge-Kutta method and the Velocity-Verlet method. 
 
-The goal in this project is to develop a code that can perform simulations of an
-open cluster using Newtonian gravity. First, however we will compare
-the stability of two different methods. This is because when we are
-looking at a system with a large number of particles, we are more
-interested in the statistical properties of the system than in the
-individual motion of each of the particles. This means that the
-stability of the solution method is more important than its short term
-accuracy.  This project is inspired by an article by Joyce {\em et al.}, see Ref.~\cite{joyce2010} below.
-When  solving this project, we recommend downloading this article. It is a good companion to understand the 
-physics discussed here. 
+\section{Theory}
+The Newtonian two-body problem in three dimensions
 
-In the first part of this project we will explore the stability of two
-well-tested numerical methods for solving differential equations. The algorithms to test and implement are the fourth-order Runge-Kutta method and the Velocity-Verlet method. 
+dimentionless variables
+
+\section{Numerical methods}
+Runge-Kutta method and the Velocity-Verlet method discussed in the lecture notes.
+  
+  
+\rule{0.3\textwidth}{0.4pt}\par % Short horizontal line under the title  
 
 \begin{enumerate}
 \item[a)] Implement the Newtonian two-body (you can choose masses and dimensionalities as
