@@ -123,8 +123,9 @@ MD simulations that use periodic boundary conditions have a large number of unit
 During the simulation, only the properties of the original simulation box need to be recorded and propagated. 
 
 \paragraph{The minimum image convention}
-When an atom leave the simulation box it must re-enter the box on the opposite side. This leads to two possible strategic choices: (A) 
+When an atom leave the simulation box it must re-enter the box on the opposite side. This leads to two possible strategic choices: (A) 'fold back' particles into the simulation box when they leave it, or (B) let them go on into the other side of the box?
 
+....ahh, this is relevant for computing forces/potentials!
 An atom which has passed through one face of the simulation box should re-enter through the opposite face-or its image should do it. Evidently, a strategic decision must be made: Do we (A) “fold back” particles into the simulation box when they leave it, or do we (B) let them go on (but compute interactions with the nearest images)? The decision has no effect on the course of the simulation, but if the user in interested in mean displacements, diffusion lenghts, etc., the second option is preferable.
 
 
