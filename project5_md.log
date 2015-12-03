@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.22)  3 DEC 2015 14:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.22)  3 DEC 2015 11:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**report5.tex
-(./report5.tex
+**project5_md.tex
+(./project5_md.tex
 LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
@@ -310,7 +310,22 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip46
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count118
+\c@@ppsavesec=\count119
+\c@@ppsaveapp=\count120
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/SIunits/SIunits.sty
+Package: SIunits 2007/12/02 v1.36 Support for the International System of units
+ (MH)
+
+
+\@qskwidth=\skip47
+\symgreek=\mathgroup6
+(/usr/local/texlive/2014/texmf-dist/tex/latex/SIunits/SIunits.cfg)
+Option `squaren' provided!
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -332,37 +347,43 @@ File: lstlang1.sty 2014/03/04 1.5c listings language file
 LaTeX Warning: Unused global option(s):
     [a4wide].
 
-(./report5.aux)
-\openout1 = `report5.aux'.
+No file project5_md.aux.
+\openout1 = `project5_md.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-\c@lstlisting=\count118
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 39.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 39.
+\c@lstlisting=\count121
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count119
+\scratchcounter=\count122
 \scratchdimen=\dimen130
 \scratchbox=\box31
-\nofMPsegments=\count120
-\nofMParguments=\count121
+\nofMPsegments=\count123
+\nofMParguments=\count124
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count122
+\MPscratchCnt=\count125
 \MPscratchDim=\dimen131
-\MPnumerator=\count123
-\makeMPintoPDFobject=\count124
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
 \everyMPtoPDFconversion=\toks24
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -380,7 +401,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 81.
+Package hyperref Info: Link coloring OFF on input line 39.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -388,89 +409,107 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count125
+\c@section@level=\count128
 )
-LaTeX Info: Redefining \ref on input line 81.
-LaTeX Info: Redefining \pageref on input line 81.
-LaTeX Info: Redefining \nameref on input line 81.
-
-(./report5.out) (./report5.out)
+LaTeX Info: Redefining \ref on input line 39.
+LaTeX Info: Redefining \pageref on input line 39.
+LaTeX Info: Redefining \nameref on input line 39.
 \@outlinefile=\write3
-\openout3 = `report5.out'.
-
-\drop=\skip47
-
-Overfull \hbox (17.0pt too wide) in paragraph at lines 83--83
-[][] 
- []
+\openout3 = `project5_md.out'.
 
 
-Overfull \hbox (17.0pt too wide) in paragraph at lines 83--83
-[][] 
- []
+Option `squaren' provided! 
+ Command \squaren defined by SIunits package!
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 83.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 45.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 90.
+
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [1
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 90.
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./repo
-rt5.toc)
-\tf@toc=\write4
-\openout4 = `report5.toc'.
-
-
-[2]
-LaTeX Font Info:    Try loading font information for U+msa on input line 94.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 94.
+LaTeX Font Info:    Try loading font information for U+msb on input line 90.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (78.1938pt too wide) in paragraph at lines 103--106
-\T1/cmr/m/n/10.95 ogy?(fra oppg) see 'Ar-eas of ap-pli-ca-tion and lim-i-ta-tio
-ns' at https://en.wikipedia.org/wiki/Molecular_dynamics
+) [1
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (10.3305pt too wide) in paragraph at lines 110--111
+\T1/cmtt/m/n/10.95 com / andeplane / molecular-[]dynamics-[]fys3150$[] \T1/cmr/
+m/n/10.95 (re-mem-ber to be logged in) and fork the project.
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
-[3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
- (./report5.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
-Package rerunfilecheck Info: File `report5.out' has not changed.
-(rerunfilecheck)             Checksum: D8F8C411070CCB09020DB13A1C7E3D20;140.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
+[2] [3]
+
+LaTeX Warning: Reference `sec:units' on page 4 undefined on input line 156.
+
+[4] [5] [6] [7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 262.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 262.
+ (./project5_md.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 262.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 262.
+
+
+Package rerunfilecheck Warning: File `project5_md.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `project5_md.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  5736E7CA9FBECEA4EA4D0B112BE7B044;350.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 262.
  ) 
 Here is how much of TeX's memory you used:
- 7677 strings out of 493117
- 111098 string characters out of 6135433
- 224508 words of memory out of 5000000
- 11006 multiletter control sequences out of 15000+600000
- 20157 words of font info for 55 fonts, out of 8000000 for 9000
+ 8319 strings out of 493117
+ 119704 string characters out of 6135433
+ 237743 words of memory out of 5000000
+ 11582 multiletter control sequences out of 15000+600000
+ 26851 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,8n,58p,686b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,12n,58p,1147b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on report5.pdf (3 pages, 234573 bytes).
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on project5_md.pdf (8 pages, 377985 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 202 PDF objects out of 1000 (max. 8388607)
+ 170 compressed objects within 2 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

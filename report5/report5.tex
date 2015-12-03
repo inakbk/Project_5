@@ -67,7 +67,7 @@ When we have found a estimate for the critical temperature we will compare it to
 \vspace*{0.25\drop} % Whitespace under the publisher text
 
 \begin{center}
-{ \scriptsize \noindent All source codes can be found at: \texttt{https://github.com/inakbk/Project\_5}. }
+{ \scriptsize \noindent All source codes can be found at: \texttt{https://github.com/inakbk/molecular-dynamics-fys3150}. }
 \end{center}
 
 \rule{\textwidth}{0.4pt}\par % Thin horizontal line
@@ -89,19 +89,31 @@ When we have found a estimate for the critical temperature we will compare it to
 
 \section{Introduction}
 
-The goal in this project is to develop a code that can perform simulations of an open cluster using Newtonian gravity. First, however we will compare the stability of two different methods. This is because when we are looking at a system with a large number of particles, we are more interested in the statistical properties of the system than in the individual motion of each of the particles. This means that the stability of the solution method is more important than its short term accuracy.  This project is inspired by an article by Joyce {\em et al.}, see Ref.~\cite{joyce2010} below.
+Molecular dynamics (MD) is a computer simulation method used to study atoms and molecule structure and movement. In a MD simulation the atoms or molecules are allowed to interact trough a force given by a potential for a given time. This makes it possible to study the systems development over time. 
 
-In the first part of this project we will explore the stability of two well-tested numerical methods for solving differential equations. The algorithms to test and implement are the fourth-order Runge-Kutta method and the Velocity-Verlet method. 
+MD is a a type of N-body simulation since the simulation often consists of a large number of atoms or molecules. It is therefore possible to use MD to study stastistical properties of a large system consisting of N such atoms or molecules. For systems that obey the ergodic hypothesis the evolution of a single molecular dynamics simulation may be used to determine macroscopic thermodynamic properties of the system. This is because the time averages of an ergodic system correspond to microcanonical ensemble averages\footnote{\texttt{https://en.wikipedia.org/wiki/Molecular\_dynamics} 3.dec 11:25}.
+
+Often the main motivation to use Molecular dynamics is that it is not possible to determine properties of the system analytically because of the large number of particles. The main limitation for the numerical simulation is the computer recources available, but also cumulative errors in the numerical integration. The first is solved by applying periodic boundary conditions while the latter is solved by proper selection of algorithms and parameters. In this paper we will have a look at two numerical integration methods; the Euler-Cromer method and the Velocity Verlet integrator. 
+
+
+In this paper we will study the properties of a large system consisting of Argon atoms. And compare with experimental data(?). We will have a constant number of particles, a constant volume and a more or less constant engergy (depending on the integrator). We are more interested in the statistical properties of the system than in the individual motion of each of the particles. We want to sample microstates from the microcanonical ensemble (NVE).
+(?se over avsnittet over?)
+
+
+The applications of MD is many ranging from chemical physics, materials science and the modelling of biomolecules.
+What areas of physics can it be used in? Chemistry and biology?(fra oppg)
+see 'Areas of application and limitations' at https://en.wikipedia.org/wiki/Molecular\_dynamics and google
+
+
+
 
 \section{Theory}
-The Newtonian two-body problem in three dimensions
 
-dimentionless variables
 
 \section{Numerical methods}
-Runge-Kutta method and the Velocity-Verlet method discussed in the lecture notes.
+Euler-Cromer method and the Velocity-Verlet method (discussed in the lecture notes.)
   
-  
+
 \rule{0.3\textwidth}{0.4pt}\par % Short horizontal line under the title  
 
 \end{document}
