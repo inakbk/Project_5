@@ -13,6 +13,7 @@
 \usepackage{hyperref}
 
 \setcounter{tocdepth}{2}
+\usepackage{url} %url + line break
 
 \lstset{language=c++}
 \lstset{alsolanguage=[90]Fortran}
@@ -67,7 +68,7 @@ When we have found a estimate for the critical temperature we will compare it to
 \vspace*{0.25\drop} % Whitespace under the publisher text
 
 \begin{center}
-{ \scriptsize \noindent All source codes can be found at: \texttt{https://github.com/inakbk/molecular-dynamics-fys3150}. }
+{ \scriptsize \noindent All source codes can be found at: \url{https://github.com/inakbk/molecular-dynamics-fys3150}. }
 \end{center}
 
 \rule{\textwidth}{0.4pt}\par % Thin horizontal line
@@ -91,7 +92,7 @@ When we have found a estimate for the critical temperature we will compare it to
 
 Molecular dynamics (MD) is a computer simulation method used to study atoms and molecule structure and movement. In a MD simulation the atoms or molecules are allowed to interact trough a force given by a potential for a given time. This makes it possible to study the systems development over time. 
 
-MD is a a type of N-body simulation since the simulation often consists of a large number of atoms or molecules. It is therefore possible to use MD to study stastistical properties of a large system consisting of N such atoms or molecules. For systems that obey the ergodic hypothesis the evolution of a single molecular dynamics simulation may be used to determine macroscopic thermodynamic properties of the system. This is because the time averages of an ergodic system correspond to microcanonical ensemble averages\footnote{\texttt{https://en.wikipedia.org/wiki/Molecular\_dynamics} 3.dec 11:25}.
+MD is a a type of N-body simulation since the simulation often consists of a large number of atoms or molecules. It is therefore possible to use MD to study stastistical properties of a large system consisting of N such atoms or molecules. For systems that obey the ergodic hypothesis the evolution of a single molecular dynamics simulation may be used to determine macroscopic thermodynamic properties of the system. This is because the time averages of an ergodic system correspond to microcanonical ensemble averages\footnote{\url{https://en.wikipedia.org/wiki/Molecular\_dynamics} 3.dec 11:25}.
 
 Often the main motivation to use Molecular dynamics is that it is not possible to determine properties of the system analytically because of the large number of particles. The main limitation for the numerical simulation is the computer recources available, but also cumulative errors in the numerical integration. The first is solved by applying periodic boundary conditions while the latter is solved by proper selection of algorithms and parameters. In this paper we will have a look at two numerical integration methods; the Euler-Cromer method and the Velocity Verlet integrator. 
 
@@ -102,7 +103,7 @@ In this paper we will study the properties of a large system consisting of Argon
 
 The applications of MD is many ranging from chemical physics, materials science and the modelling of biomolecules.
 What areas of physics can it be used in? Chemistry and biology?(fra oppg)
-see 'Areas of application and limitations' at https://en.wikipedia.org/wiki/Molecular\_dynamics and google
+see 'Areas of application and limitations' at \url{https://en.wikipedia.org/wiki/Molecular\_dynamics} and google
 
 
 
@@ -113,17 +114,18 @@ see 'Areas of application and limitations' at https://en.wikipedia.org/wiki/Mole
 \section{Numerical methods}
 
 \subsection{Periodic boundaryconditions (PBCs)}
-To avoid problems with boundary effects we will apply periodic boundary conditions using a small part called a unit cell so that we simulate a system of infinite size. This has a great analogy to some (old) video games such as Snake 2, if the snake head passes through one side of the unit cell, it re-appears on the opposite side with the same velocity. In the system of atoms this would mean that if an atom should leave the lattice at one side it will enter on the oposite side with the same values for the physical parameters as it had before it left. This also implies that an attom at the edge of the lattice will interact with an atom at the opposite side of the lattice so that every atom have the same number of 'neighbours'. 
+To avoid problems with boundary effects we will apply periodic boundary conditions using a small part called a unit cell so that we simulate a system of infinite size. This has a great analogy to 'old' video games such as Snake 2. If the snake head passes through one side of the unit cell, it re-appears on the opposite side with the same velocity. In the system of atoms this would mean that if an atom should leave the lattice at one side it will enter on the oposite side with the same values for the physical parameters as it had before it left. This also implies that an attom at the edge of the lattice will interact with an atom at the opposite side of the lattice so that every atom have the same number of 'neighbours'. 
 
-The size of the simulation box(?define) must also be large enough to prevent unphysical behaviour. If the box is too small one unit cell might interact with itself. In the Snake analogy this would mean that the "head" interacts with or bites its own "tail" trough the wall which is allowed in the game, but not very physical. Thus the box size have to be large enough relative to the size of a unit cell, length of the simulation and the desired accuracy\footnote{\texttt{https://en.wikipedia.org/wiki/Periodic\_boundary\_conditions\#Practical\_implementation:\_continuity\_and\_the \linebreak \_minimum\_image\_convention}}. Eller er det nettopp dette som skjer her??
+The size of the simulation box(?define) must also be large enough to prevent unphysical behaviour. If the box is too small one unit cell might interact with itself. In the Snake analogy this would mean that the "head" interacts with or bites its own "tail" trough the wall which is allowed in the game, but not very physical. Thus the box size have to be large enough relative to the size of a unit cell, length of the simulation and the desired accuracy\footnote{\url{https://en.wikipedia.org/wiki/Periodic\_boundary\_conditions\#Practical\_implementation:\_continuity\_and\_the\_minimum\_image\_convention}}. Eller er det nettopp dette som skjer her??
 
 MD simulations that use periodic boundary conditions have a large number of unit cells where one is the 'original' and the others are copies called images. 
 
+During the simulation, only the properties of the original simulation box need to be recorded and propagated. 
 
+\paragraph{The minimum image convention}
+When an atom leave the simulation box it must re-enter the box on the opposite side. This leads to two possible strategic choices: (A) 
 
-During the simulation, only the properties of the original simulation box need to be recorded and propagated. The minimum-image convention is a common form of PBC particle bookkeeping in which each individual particle in the simulation interacts with the closest image of the remaining particles in the system.
-
-An object which has passed through one face of the simulation box should re-enter through the opposite face—or its image should do it. Evidently, a strategic decision must be made: Do we (A) “fold back” particles into the simulation box when they leave it, or do we (B) let them go on (but compute interactions with the nearest images)? The decision has no effect on the course of the simulation, but if the user in interested in mean displacements, diffusion lenghts, etc., the second option is preferable.
+An atom which has passed through one face of the simulation box should re-enter through the opposite face-or its image should do it. Evidently, a strategic decision must be made: Do we (A) “fold back” particles into the simulation box when they leave it, or do we (B) let them go on (but compute interactions with the nearest images)? The decision has no effect on the course of the simulation, but if the user in interested in mean displacements, diffusion lenghts, etc., the second option is preferable.
 
 
 
